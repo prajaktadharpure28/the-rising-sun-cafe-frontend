@@ -1,0 +1,109 @@
+.cart-container {
+  font-family: 'Satisfy', cursive;;
+  background-color: white;
+  padding: 30px 60px;
+  max-height: 400px;
+  overflow: scroll;
+  border-radius: 15px;
+}
+
+.cart-container::-webkit-scrollbar {
+  display: none;
+}
+
+.myCartmodal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.myCartoverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.remove-button{
+  border-radius: 30px;
+  border: 1px solid #ecc6f8;
+  font-size: 15px;
+  font-family: 'Satisfy', cursive;
+  outline: none;
+  align-items: center;
+  background-color: #8a16b8;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 6px -2px #613e6e;
+  transition: all 0.3s ease-in-out;
+  &:focus {
+    border-color: none;
+  }
+}
+
+.remove-button:hover {
+background-color: rgb(250, 137, 137);
+color: #fbfafc;
+border: 1px solid #f9f7fa;
+}
+
+.cancel-btn {
+  border-radius: 30px;
+  border: 1px solid #ecc6f8;
+  font-size: 15px;
+  font-family: 'Satisfy', cursive;
+  outline: none;
+  align-items: center;
+  background-color: #8a16b8;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 6px -2px #613e6e;
+  transition: all 0.3s ease-in-out;
+  &:focus {
+    border-color: none;
+  }
+}
+
+.cancel-btn:hover {
+  background-color: rgb(250, 137, 137);
+  color: #fbfafc;
+  border: 1px solid #f9f7fa;
+}
+
+.order-btn{
+  border-radius: 30px;
+  border: 1px solid #ecc6f8;
+  font-size: 15px;
+  font-family: 'Satisfy', cursive;
+  outline: none;
+  align-items: center;
+  background-color: #8a16b8;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  margin-top: 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 6px -2px #613e6e;
+  transition: all 0.3s ease-in-out;
+  &:focus {
+    border-color: none;
+  }
+}
+.order-btn:hover {
+  background-color: rgb(250, 137, 137);
+  color: #fbfafc;
+  border: 1px solid #f9f7fa;
+}
+
+@media screen and (max-width: 500px) {
+  .cart-container {
+    min-width: 300px;
+  }
+}
